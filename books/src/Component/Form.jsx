@@ -45,7 +45,7 @@ export default function Form() {
 
         if(data.password.trim() == "" || data.password.trim().length<10){
             error.password = "Password should have atleast 10 letters"
-        }else if (!/[!@#$%^&(),."]/.test(data.email)) {
+        }else if (!/[!@#$%^&,.]/.test(data.password)) {
             error.password = "Include a special character";
         }
 
